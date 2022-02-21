@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sslserver',
     'rest_framework',
     'corsheaders',
+    'django_ace',
+    'mocks'
 ]
 
 MIDDLEWARE = [
