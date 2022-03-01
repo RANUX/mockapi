@@ -5,4 +5,4 @@ class MockDataSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = MockData
-        fields = '__all__'
+        fields = ('status', 'message', 'data')
