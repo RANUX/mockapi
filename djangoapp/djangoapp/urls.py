@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('mocks.urls')),
+    path('scanner/', include('mocks.urls')),
     path('admin/', admin.site.urls),
 ]
