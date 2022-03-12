@@ -10,13 +10,8 @@ from .serializers import (
     MockDataSerializer, 
 )
 
-
-class MockDataView(generics.RetrieveAPIView):
-    serializer_class = MockDataSerializer
-    queryset = MockData.objects.all()
-
 @api_view(['POST'])
-def mock_post_view(request, *args, **kwargs):
+def mock_post_request_view(request, *args, **kwargs):
     mock_data, created = MockData.objects.get_or_create(status='ok', request_data=request.data)
     if created:
         mock_data.message = f'MockData #{mock_data.id} created'
