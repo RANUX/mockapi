@@ -11,7 +11,7 @@ from .serializers import (
 )
 
 @api_view(['POST'])
-def mock_post_request_view(request, *args, **kwargs):
+def mock_post_request_view(request):
     mock_data, created = MockData.objects.get_or_create(status='ok', request_data=request.data)
     if created:
         mock_data.message = f'MockData #{mock_data.id} created'
