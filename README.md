@@ -20,7 +20,10 @@ cd djangoapp/
 ./manage.py createsuperuser
 
 systemctl daemon-reload
-systemctl restart mockapi.htmldoc.ru-gunicorn.service
+systemctl restart mockapi.hackerhelp.ru-gunicorn.service
+
+# change db user
+chown sites db.sqlite3
 
 # To read sqlite.db change owner of djangoapp
 chown sites djangoapp/
