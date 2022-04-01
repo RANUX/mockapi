@@ -2,5 +2,4 @@ djangorestframework
 django-cors-headers
 requests
 django-sslserver
-django-ace
 -e git+https://github.com/RANUX/django-ace.git@main#egg=django-ace
